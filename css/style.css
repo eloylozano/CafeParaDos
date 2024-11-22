@@ -20,28 +20,45 @@ header {
 }
 
 nav {
-  height: 75px;
+  height: auto; 
   display: flex;
+  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  padding: 15px;
   color: #fff;
 }
 
 nav img {
   height: 50px;
+  flex-shrink: 0; 
 }
 
 nav ul {
   display: flex;
-  float: right;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-end; 
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; 
 }
 
 nav ul li {
-  margin: 0 40px;
-  font-size: 1.2em;
-  list-style: none;
+  margin: 5px 15px; 
+  font-size: 1.1em;
 }
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #caba9c;
+}
+
 
 main {
   z-index: -1;
@@ -55,17 +72,18 @@ main {
   box-shadow: inset 0px -15px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
-#inicio-container {
+#inicio-box {
   width: 50%;
   height: 100%;
+  display: flex;
+  align-items: center;
   color: white;
   padding-left: 75px;
-  padding-top: 250px;
 }
 
 
 #inicio-container h1 {
-  font-size: 6em;
+  font-size: 5vh;
   margin-bottom: 45px;
 }
 
@@ -77,7 +95,6 @@ main {
 #inicio-container p {
   padding: 25px 0;
   font-size: 1.1rem;
-  width: 600px;
 }
 
 #inicio-container button {
@@ -123,7 +140,7 @@ Marron: 4d2d18
 
 #episodios {
   height: 100%;
-  padding: 50px;
+  padding: 5%;
   background-color: #fff;
 }
 
@@ -143,10 +160,13 @@ Marron: 4d2d18
   box-shadow: 10px 10px 17px -11px rgba(0, 0, 0, 0.71);
   background-color: #4c6444;
   color: white;
-  height: 450px;
+  height: 550px;
   width: 350px;
   padding: 0 25px;
   margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-sizing: border-box;
   border-radius: 15px;
 }
@@ -173,17 +193,29 @@ Marron: 4d2d18
   margin-bottom: 25px;
 }
 
+.episodio-info{
+  background-color: green;
+  height: 250px;
+  
+}
+
 .episodio-player {
   display: flex;
-  justify-content: center;
-  margin: 20px 20px 0 20px;
+  bottom: 0;
+  justify-content: flex-end;
   align-items: center;
   display: flex;
+  margin-bottom: 15px;
   justify-content: space-around;
 }
 
 .episodio-player svg {
-  cursor: pointer;
+  cursor: pointer; 
+  transition: transform 0.3s ease;
+}
+
+.episodio-player svg:hover {
+  transform: scale(1.1); 
 }
 
 #foro {
@@ -246,6 +278,12 @@ Marron: 4d2d18
   margin: 25px 0;
 }
 
+.elemento-foro:hover {
+  background: #caba9c;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
 .elemento-foro h4 {
   padding-bottom: 10px;
 }
@@ -260,9 +298,8 @@ footer {
   justify-content: center;
 }
 
-footer svg{
+footer svg {
   margin: 10px 5px;
 }
 
-footer section{
-}
+footer section {}
