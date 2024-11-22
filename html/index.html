@@ -6,67 +6,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe para dos</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/img/LogoSimple.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <img src="../assets/img/Logo" alt="Logo">
-        <section>
+        <nav>
+            <a href="index.html"><img src="../assets/img/LogoFFF.png" alt="Logo"></a>
             <ul>
-                <li>Home</li>
-                <li>Servicios</li>
-                <li>Contacto</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Contacto</a></li>
             </ul>
-        </section>
+        </nav>
     </header>
     <main>
-        <section class="inicio">
-            <h1>BIENVENIDO A CAFÉ PARA DOS</h1>
-            <q>Una pausa con mucho sabor</q>
-            <p>Dos voces, un café y temas que despiertan tanto como la primera taza del día. Un espacio íntimo donde las conversaciones fluyen con naturalidad, abordando la actualidad desde una perspectiva cercana y relajada. </p>
+        <section id="inicio">
+            <div id="inicio-container">
+                <h1>CAFÉ PARA DOS</h1>
+                <q>Una pausa con mucho sabor</q>
+                <p>Dos voces, un café y temas que despiertan tanto como la primera taza del día. Un espacio íntimo
+                    donde
+                    las
+                    conversaciones fluyen con naturalidad, abordando la actualidad desde una perspectiva cercana y
+                    relajada.
+                </p>
+                <button id="more">Descubre más</button>
+                <button id="suscribe">Suscríbete</button>
+
+            </div>
         </section>
 
-        <section class="episodios">
-            <div class="epiosodio-box">
-                <img src="../assets/img/played.png" alt="Imagen Vinilo">
-                <div class="episodio info">
-                    <h3>Episodio 1</h3>
-                    <p>Descripción del episodio 1. Temas que se tratan...</p>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 512 512"><path fill="currentColor" d="M224 432h-80V80h80Zm144 0h-80V80h80Z"/></svg> -->
+
+        <section id="episodios">
+            <h2>Esucha nuestros episodios</h2>
+            <div id="episodios-container">
+                <div class="episodio-box">
+                    <div class="episodio-box-img"><img src="../assets/img/vinylBlack.png" alt="Imagen Vinilo"></div>
+                    <div class="episodio info">
+                        <h3>Episodio 1</h3>
+                        <p>Descripción del episodio 1. Temas que se tratan...</p>
+                    </div>
+                    <div class="episodio-player">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M496 400L256 256l240-144zm-240 0L16 256l240-144z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="m16 400l240-144L16 112zm240 0l240-144l-240-144z" />
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div class="epiosodio-box">
-                <img src="../assets/img/played.png" alt="Imagen Vinilo">
-                <div class="episodio info">
-                    <h3>Episodio 2</h3>
-                    <p>Descripción del episodio 2. Temas que se tratan...</p>
+                <div class="episodio-box">
+                    <div class="episodio-box-img"><img src="../assets/img/vinylBlack.png" alt="Imagen Vinilo"></div>
+                    <div class="episodio info">
+                        <h3>Episodio 2</h3>
+                        <p>Descripción del episodio 2. Temas que se tratan...</p>
+                    </div>
+                    <div class="episodio-player">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M496 400L256 256l240-144zm-240 0L16 256l240-144z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="m16 400l240-144L16 112zm240 0l240-144l-240-144z" />
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div class="epiosodio-box">
-                <img src="../assets/img/played.png" alt="Imagen Vinilo">
-                <div class="episodio info">
-                    <h3>Episodio 3</h3>
-                    <p>Descripción del episodio 3. Temas que se tratan...</p>
+                <div class="episodio-box">
+                    <div class="episodio-box-img"><img src="../assets/img/vinylBlack.png" alt="Imagen Vinilo"></div>
+                    <div class="episodio info">
+                        <h3>Episodio 3</h3>
+                        <p>Descripción del episodio 3. Temas que se tratan...</p>
+                    </div>
+                    <div class="episodio-player">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M496 400L256 256l240-144zm-240 0L16 256l240-144z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="m16 400l240-144L16 112zm240 0l240-144l-240-144z" />
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div class="epiosodio-box">
-                <img src="../assets/img/played.png" alt="Imagen Vinilo">
-                <div class="episodio info">
-                    <h3>Episodio 4</h3>
-                    <p>Descripción del episodio 4. Temas que se tratan...</p>
+                <div class="episodio-box">
+                    <div class="episodio-box-img"><img src="../assets/img/vinylBlack.png" alt="Imagen Vinilo"></div>
+                    <div class="episodio info">
+                        <h3>Episodio 4</h3>
+                        <p>Descripción del episodio 4. Temas que se tratan...</p>
+                    </div>
+                    <div class="episodio-player">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M496 400L256 256l240-144zm-240 0L16 256l240-144z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="m16 400l240-144L16 112zm240 0l240-144l-240-144z" />
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div class="epiosodio-box">
-                <img src="../assets/img/played.png" alt="Imagen Vinilo">
-                <div class="episodio info">
-                    <h3>Episodio 5</h3>
-                    <p>Descripción del episodio 5. Temas que se tratan...</p>
+                <div class="episodio-box">
+                    <div class="episodio-box-img"><img src="../assets/img/vinylBlack.png" alt="Imagen Vinilo"></div>
+                    <div class="episodio info">
+                        <h3>Episodio 5</h3>
+                        <p>Descripción del episodio 5. Temas que se tratan...</p>
+                    </div>
+                    <div class="episodio-player">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M496 400L256 256l240-144zm-240 0L16 256l240-144z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="m16 400l240-144L16 112zm240 0l240-144l-240-144z" />
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div class="epiosodio-box">
-                <img src="../assets/img/played.png" alt="Imagen Vinilo">
-                <div class="episodio info">
-                    <h3>Episodio 6</h3>
-                    <p>Descripción del episodio 6. Temas que se tratan...</p>
+                <div class="episodio-box">
+                    <div class="episodio-box-img"><img src="../assets/img/vinylBlack.png" alt="Imagen Vinilo"></div>
+                    <div class="episodio info">
+                        <h3>Episodio 6</h3>
+                        <p>Descripción del episodio 6. Temas que se tratan...</p>
+                    </div>
+                    <div class="episodio-player">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M496 400L256 256l240-144zm-240 0L16 256l240-144z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="m16 400l240-144L16 112zm240 0l240-144l-240-144z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="episodio-box">
+                    <div class="episodio-box-img"><img src="../assets/img/vinylBlack.png" alt="Imagen Vinilo"></div>
+                    <div class="episodio info">
+                        <h3>Episodio 7</h3>
+                        <p>Descripción del episodio 7. Temas que se tratan...</p>
+                    </div>
+                    <div class="episodio-player">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M496 400L256 256l240-144zm-240 0L16 256l240-144z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="m16 400l240-144L16 112zm240 0l240-144l-240-144z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="episodio-box">
+                    <div class="episodio-box-img"><img src="../assets/img/vinylBlack.png" alt="Imagen Vinilo"></div>
+                    <div class="episodio info">
+                        <h3>Episodio 7</h3>
+                        <p>Descripción del episodio 7. Temas que se tratan...</p>
+                    </div>
+                    <div class="episodio-player">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M496 400L256 256l240-144zm-240 0L16 256l240-144z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="3em" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="m16 400l240-144L16 112zm240 0l240-144l-240-144z" />
+                        </svg>
+                    </div>
                 </div>
             </div>
 
