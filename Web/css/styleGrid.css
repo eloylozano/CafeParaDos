@@ -85,7 +85,7 @@ Marron: 4d2d18
 /* Ponemos el fondo blanco y ajustanmos al tamaño entero vertical en el apartado de episodios */
 #servicios {
   height: 100%;
-  padding: 5%;
+  padding: 5% 15%;
   background-color: #fff;
 }
 
@@ -98,13 +98,16 @@ Marron: 4d2d18
 /* Haremos que el contenedor de episiodios pueda ser ajustado al contraerse con flex-wrap */
 #servicios-container {
   display: grid;
-  justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-  gap: 25px; 
+  grid-auto-flow: row; 
+  justify-content: center; 
+  gap: 50px; 
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
 }
+
+
 
 /* Ajustamos la caja de cada servicio con un tamaño rectangular, fondo, margen, espacio interior y alineando el contenido verticalmente */
 .servicio-box {
@@ -158,7 +161,7 @@ Marron: 4d2d18
 
 #formacion {
   height: 100%;
-  padding: 5%;
+  padding: 5% 10%;
   background-color: #fff;
 }
 
@@ -168,26 +171,21 @@ Marron: 4d2d18
   font-size: 3em;
 }
 
-/* Haremos que el contenedor de episiodios pueda ser ajustado al contraerse con flex-wrap */
 #formacion-container {
   display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-template-columns: repeat(auto-fill, minmax(280px, 2fr)); 
+  justify-items: center; 
   gap: 25px; 
-  width: 100%;
   padding: 20px;
-  box-sizing: border-box;
+  width: fit-content;
 }
 
-/* Ajustamos la caja de cada servicio con un tamaño rectangular, fondo, margen, espacio interior y alineando el contenido verticalmente */
 .formacion-box {
   box-shadow: 10px 10px 17px -11px rgba(0, 0, 0, 0.71);
   background-color: #2e3d29;
   color: white;
-  width: 100%; 
+  width: 100%;
   padding: 25px;
-  display: flex;
-  flex-direction: column;
   border-radius: 15px;
 }
 
