@@ -161,7 +161,7 @@ Marron: 4d2d18
 
 #formacion {
   height: 100%;
-  padding: 5% 10%;
+  padding: 1% 10%;
   background-color: #fff;
 }
 
@@ -182,7 +182,7 @@ Marron: 4d2d18
 
 .formacion-box {
   box-shadow: 10px 10px 17px -11px rgba(0, 0, 0, 0.71);
-  background-color: #2e3d29;
+  background-color: #102820;
   color: white;
   width: 100%;
   padding: 25px;
