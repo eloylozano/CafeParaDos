@@ -181,7 +181,7 @@ Marron: 4d2d18
 /* Ajustamos la caja de cada episodio con un tamaño rectangular con fondo, margen, espacio interior y alineado vertical el contenido interior */
 .episodio-box {
   box-shadow: 10px 10px 17px -11px rgba(0, 0, 0, 0.71);
-  background-color: #4c6444;
+  background-color: #2e3d29;
   color: white;
   height: 550px;
   width: 350px;
@@ -249,7 +249,7 @@ Marron: 4d2d18
 /* Ajustamos el tamaño del contenido del foro */
 #foro {
   height: 100%;
-  padding: 0 75px;
+  padding: 0 3em;
 }
 
 /* Y el tamaño del titulo */
@@ -280,7 +280,7 @@ Marron: 4d2d18
   height: 50px;
   border-radius: 15px;
   padding: 15px;
-  margin-right: 50px;
+  margin-right: 1rem;
 }
 
 /* Ajustar el tamaño del boton del formulario, con fondo y borde radius */

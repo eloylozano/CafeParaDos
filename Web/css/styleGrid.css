@@ -1,0 +1,238 @@
+/* Importar fuentes desde una api */
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+
+/* Selector universal para aplicar la fuente y resetear la web */
+* {
+  font-family: "SF Pro Display", Helvetica, Poppins;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Quitar el subryado y el color de los links */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Situar el header arriba, superpuesto y con un sshadow inferior */
+header {
+  position: relative;
+  z-index: 4;
+  background-color: #102820;
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Se usa para situar el menú del header con disposición horizontal, alineado vertical y justificar si se reduce el tamaño */
+nav {
+  height: auto; 
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: #fff;
+}
+
+/* Ajustar el tamaño del logo*/
+nav img {
+  height: 50px;
+}
+
+/* Alineamos horizontal sin estilo de lista, y permitimos que se ajuste al tamaño con wrap y grow si necesita más espacio */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1; 
+  list-style: none;
+  justify-content: flex-end; 
+  padding: 0;
+  margin: 0;
+}
+
+/* Ajustar el margen y tamaño de letra */
+nav ul li {
+  margin: 5px 15px; 
+  font-size: 1.1em;
+}
+
+/* Transición para los enlaces */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Color al que cambia la transición */
+nav ul li a:hover {
+  color: #caba9c;
+}
+
+/* Situamos el main por detrás del header para ver la sombra */
+main {
+  z-index: -1;
+}
+
+/* Paleta
+Verde Oscuro: 102820
+VerdeClaro: 4c6444
+Beige: caba9c
+Caqui: 8a6240
+Marron: 4d2d18
+*/
+
+/* Ponemos el fondo blanco y ajustanmos al tamaño entero vertical en el apartado de episodios */
+#servicios {
+  height: 100%;
+  padding: 5%;
+  background-color: #fff;
+}
+
+/* La segunda cabecera estará alineada al medio y tendrá fuente más grande */
+#servicios h2 {
+  text-align: center;
+  font-size: 3em;
+}
+
+/* Haremos que el contenedor de episiodios pueda ser ajustado al contraerse con flex-wrap */
+#servicios-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 25px; 
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Ajustamos la caja de cada servicio con un tamaño rectangular, fondo, margen, espacio interior y alineando el contenido verticalmente */
+.servicio-box {
+  box-shadow: 10px 10px 17px -11px rgba(0, 0, 0, 0.71);
+  background-color: #4d2d18;
+  color: white;
+  width: 100%; 
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+
+/* La foto del vinilo estará alineada horizontal */
+.servicio-box-img {
+  display: flex;
+  padding: 0 0 25px 0;
+  justify-content: center;
+}
+
+/* Ajustamos el tamaño del vinilo */
+.servicio-box img {
+  width: 200px;
+}
+
+/* Haremos una pequeña  linea divisoria entre el vinilo y el titulo */
+.servicio-box hr {
+  background-color: #fff;
+  height: 2px;
+  border: none;
+  margin-bottom: 25px;
+}
+
+/* Este será el titulo del capítulo */
+.servicio-box h3 {
+  margin-bottom: 25px;
+}
+
+.servicio-info p {
+  text-align: justify;
+}
+
+/* Paleta
+Verde Oscuro: 102820
+VerdeClaro: 4c6444
+Beige: caba9c
+Caqui: 8a6240
+Marron: 4d2d18
+*/
+
+#formacion {
+  height: 100%;
+  padding: 5%;
+  background-color: #fff;
+}
+
+/* La segunda cabecera estará alineada al medio y tendrá fuente más grande */
+#formacion h2 {
+  text-align: center;
+  font-size: 3em;
+}
+
+/* Haremos que el contenedor de episiodios pueda ser ajustado al contraerse con flex-wrap */
+#formacion-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 25px; 
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Ajustamos la caja de cada servicio con un tamaño rectangular, fondo, margen, espacio interior y alineando el contenido verticalmente */
+.formacion-box {
+  box-shadow: 10px 10px 17px -11px rgba(0, 0, 0, 0.71);
+  background-color: #2e3d29;
+  color: white;
+  width: 100%; 
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+
+/* La foto del vinilo estará alineada horizontal */
+.formacion-box-img {
+  display: flex;
+  padding: 0 0 25px 0;
+  justify-content: center;
+}
+
+/* Ajustamos el tamaño del vinilo */
+.formacion-box img {
+  width: 200px;
+}
+
+/* Haremos una pequeña  linea divisoria entre el vinilo y el titulo */
+.formacion-box hr {
+  background-color: #fff;
+  height: 2px;
+  border: none;
+  margin-bottom: 25px;
+}
+
+/* Este será el titulo del capítulo */
+.formacion-box h3 {
+  margin-bottom: 25px;
+}
+
+.formacion-info p {
+  text-align: justify;
+}
+
+/* El footer tendrá fondo marrón, alineado al medio y ajustado horizontal */
+footer {
+  background-color: #4d2d18;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Margen de los logos del footer */
+footer svg {
+  margin: 10px 5px;
+}
