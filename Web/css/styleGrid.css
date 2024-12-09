@@ -27,8 +27,8 @@ header {
 /* Se usa para situar el menú del header con disposición horizontal, alineado vertical y justificar si se reduce el tamaño */
 nav {
   height: auto; 
-  display: flex;
-  flex-wrap: wrap; 
+  display: grid;
+  grid-template-columns: 1fr auto;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
@@ -42,11 +42,9 @@ nav img {
 
 /* Alineamos horizontal sin estilo de lista, y permitimos que se ajuste al tamaño con wrap y grow si necesita más espacio */
 nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
-  justify-content: flex-end; 
   padding: 0;
   margin: 0;
 }
@@ -95,7 +93,7 @@ Marron: 4d2d18
   font-size: 3em;
 }
 
-/* Haremos que el contenedor de episiodios pueda ser ajustado al contraerse con flex-wrap */
+/* Distribuimos los elementos en columnas alineado al centro y con grid auto flow y repeat auto-fill se ajustará al tamaño de la pantalla*/
 #servicios-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
@@ -104,7 +102,6 @@ Marron: 4d2d18
   gap: 50px; 
   width: 100%;
   padding: 20px;
-  box-sizing: border-box;
 }
 
 
@@ -116,15 +113,13 @@ Marron: 4d2d18
   color: white;
   width: 100%; 
   padding: 25px;
-  display: flex;
-  flex-direction: column;
   border-radius: 15px;
 }
 
 
-/* La foto del vinilo estará alineada horizontal */
+/* La foto del servicio estará alineada horizontal y con padding por debajo */
 .servicio-box-img {
-  display: flex;
+  display: grid;
   padding: 0 0 25px 0;
   justify-content: center;
 }
@@ -147,6 +142,7 @@ Marron: 4d2d18
   margin-bottom: 25px;
 }
 
+/* El texto será justificado */
 .servicio-info p {
   text-align: justify;
 }
@@ -159,6 +155,7 @@ Caqui: 8a6240
 Marron: 4d2d18
 */
 
+/* El section tendrá máximo tamaño posible con padding vertical de 1% y horizontal 10% según el cuerpo. con fondo blanco */
 #formacion {
   height: 100%;
   padding: 1% 10%;
@@ -171,6 +168,8 @@ Marron: 4d2d18
   font-size: 3em;
 }
 
+/* Con grid template column definimos y las columnas y con auto-fill se rellenarán, ajustando el mínimo y el máximo de cada una dependiendo del tamaño de la pantalla
+Tendrá un espacio de 25px y ancho justo del contenido */
 #formacion-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 2fr)); 
@@ -180,6 +179,7 @@ Marron: 4d2d18
   width: fit-content;
 }
 
+/* Añadimos una sombra a la caja con fondo verde botella, fuente blanca, padding 25 y radio del borde de 15px */
 .formacion-box {
   box-shadow: 10px 10px 17px -11px rgba(0, 0, 0, 0.71);
   background-color: #102820;
@@ -190,19 +190,19 @@ Marron: 4d2d18
 }
 
 
-/* La foto del vinilo estará alineada horizontal */
+/* La foto del vinilo estará alineada horizontal con padding debajo*/
 .formacion-box-img {
-  display: flex;
+  display: grid;
   padding: 0 0 25px 0;
   justify-content: center;
 }
 
-/* Ajustamos el tamaño del vinilo */
+/* Ajustamos el tamaño de la foto */
 .formacion-box img {
   width: 200px;
 }
 
-/* Haremos una pequeña  linea divisoria entre el vinilo y el titulo */
+/* Haremos una pequeña linea divisoria entre la foto y el titulo */
 .formacion-box hr {
   background-color: #fff;
   height: 2px;
@@ -210,11 +210,12 @@ Marron: 4d2d18
   margin-bottom: 25px;
 }
 
-/* Este será el titulo del capítulo */
+/* Este será el titulo del curso */
 .formacion-box h3 {
   margin-bottom: 25px;
 }
 
+/* El texto estará justificado */
 .formacion-info p {
   text-align: justify;
 }
@@ -225,7 +226,7 @@ footer {
   color: white;
   padding: 25px 0;
   text-align: center;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
 }
