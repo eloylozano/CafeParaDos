@@ -27,8 +27,8 @@ header {
 /* Se usa para situar el menú del header con disposición horizontal, alineado vertical y justificar si se reduce el tamaño */
 nav {
   height: auto; 
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
   padding: 15px;
@@ -42,9 +42,11 @@ nav img {
 
 /* Alineamos horizontal sin estilo de lista, y permitimos que se ajuste al tamaño con wrap y grow si necesita más espacio */
 nav ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1; 
   list-style: none;
+  justify-content: flex-end; 
   padding: 0;
   margin: 0;
 }
